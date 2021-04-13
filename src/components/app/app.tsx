@@ -9,6 +9,7 @@ import {
 } from "@apollo/client";
 //import { onError } from "@apollo/client/link/error";
 import Clients from "./../clients";
+import Form from "./../form";
 
 /*
 const errorLink = onError(({ graphqlErrors, networkError }) => {
@@ -34,6 +35,7 @@ function App() {
     <ApolloProvider client={client}>
       <div>
         <h1>It's alive..</h1>
+        <Form />
         <Clients />
       </div>
     </ApolloProvider>
