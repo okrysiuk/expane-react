@@ -33,11 +33,17 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-      <div>
-        <h1>It's alive..</h1>
-        <Form />
+      <div className="container mx-auto px-4">
+        <div className="flex px-4 py-4">
+          <p className="text-3xl text-purple-700 mr-80">Clients list</p>
+          <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+            {" "}
+            + Add
+          </button>
+        </div>
         <Clients />
       </div>
+      <Form />
     </ApolloProvider>
   );
 }
